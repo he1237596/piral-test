@@ -1,0 +1,23 @@
+{
+  "name": "piral-test",
+  "version": "1.0.0",
+  "description": "piral小试牛刀",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/he1237596/piral-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/he1237596/piral-test/issues"
+  },
+  "homepage": "https://github.com/he1237596/piral-test#readme",
+  "dependencies": {
+    "piral-cli": "^1.1.0"
+  }
+}
