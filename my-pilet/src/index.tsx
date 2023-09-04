@@ -1,12 +1,10 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import type { PiletApi } from 'my-app';
-import { loadPilet } from '@piral/core';
 
 const Page = React.lazy(() => import('./Page'));
 
 export function setup(app: PiletApi) {
-  console.log(app)
   // 两种方式使用Extension
   // https://docs.piral.io/guidelines/tutorials/09-pilet-best-practices
   const Example = () => <app.Extension name="page2-extension" />;
