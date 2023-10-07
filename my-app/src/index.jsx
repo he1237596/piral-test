@@ -2,13 +2,14 @@
  * @Author: Chris
  * @Date: 2023-08-28 14:08:04
  * @LastEditors: Chris
- * @LastEditTime: 2023-08-28 15:57:33
+ * @LastEditTime: 2023-09-20 15:40:04
  * @Descripttion: **
  */
 import * as React from 'react';
 import { createRoot } from 'react-dom/client';
 import { createInstance, Piral, createStandardApi } from 'piral';
 import { layout, errors } from './layout';
+import { setup } from './standard';
 
 // change to your feed URL here (either using feed.piral.cloud or your own service)
 const feedUrl = 'https://feed.piral.cloud/api/v1/pilet/empty';
@@ -18,7 +19,7 @@ const res = [
   {
       "name": "my-pilet",
       "version": "1.0.0",
-      "link": "http://localhost:9001/$pilet-api/0/index.js?updated=1693209315027",
+      "link": "http://127.0.0.1:5502/my-pilet/dist/index.js?updated=1693209315027",
       "spec": "v2",
       "requireRef": "webpackChunkpr_mypilet",
       "dependencies": {}
@@ -38,6 +39,12 @@ const instance = createInstance({
     errorComponents: errors,
   },
   plugins: [...createStandardApi()],
+  availablePilets: [
+    {
+      name: "test",
+      setup
+    }
+  ],
   requestPilets() {
     return Promise.resolve(res)
     // return fetch(feedUrl)

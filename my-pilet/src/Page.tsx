@@ -2,7 +2,7 @@
  * @Author: Chris
  * @Date: 2023-08-28 14:28:42
  * @LastEditors: Chris
- * @LastEditTime: 2023-09-09 15:20:29
+ * @LastEditTime: 2023-09-20 21:28:16
  * @Descripttion: **
  */
 import React, { useState } from "react";
@@ -10,8 +10,7 @@ import React, { useState } from "react";
 import styles0 from "./Page.less";
 import styles1 from "./Page1.less";
 import exportColor from "./colorExport.less";
-import varColor from "./colorVar.less";
-
+// import varColor from "./colorVar.less";
 // console.log(styles, 1111)
 // console.log(styles1, 1111)
 // console.log(exportColor, 1111)
@@ -75,6 +74,7 @@ const App: React.FC = () => {
       <Layout>
         <Layout.Content>
           <Layout.Content>
+            <div className="dd">dddddd</div>
             <div style={{color: colorPrimary}}>dddddd</div>
             <div className={styles.container}>dddddd</div>
           </Layout.Content>

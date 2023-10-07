@@ -8,6 +8,7 @@
   "dependencies": {
     "piral": "1.1.0",
     "piral-base": "1.1.0",
+    "piral-configs": "^1.2.0",
     "piral-core": "1.1.0",
     "react": "^18",
     "react-dom": "^18",

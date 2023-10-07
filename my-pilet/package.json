@@ -10,6 +10,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "less-loader": "^11.1.3",
+    "mini-css-extract-plugin": "^2.7.6",
     "my-app": "file:../my-app/dist/emulator/my-app-1.0.0.tgz",
     "piral-cli": "1.1.0",
     "piral-cli-webpack5": "1.1.0",

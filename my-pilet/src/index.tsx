@@ -2,14 +2,15 @@
  * @Author: Chris
  * @Date: 2023-08-28 14:28:42
  * @LastEditors: Chris
- * @LastEditTime: 2023-09-09 14:55:52
+ * @LastEditTime: 2023-09-20 21:21:42
  * @Descripttion: **
  */
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import type { PiletApi } from 'my-app';
-import './colorVar.less' // 全局样式，覆盖antd样式
+// import './colorVar.less' // 全局样式，覆盖antd样式
 const Page = React.lazy(() => import('./Page'));
+import './dd.less'
 
 export function setup(app: PiletApi) {
   // 两种方式使用Extension
